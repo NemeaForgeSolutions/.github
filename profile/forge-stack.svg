@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-label="Forge Arsenal - Technologies &amp; Distributed Systems Stack">
+  <title>Forge Arsenal - Technologies &amp; Production Stack</title>
+  <desc>NemeaForge Solutions technology stack: Frontend &amp; Micro-UI, Backend &amp; Distributed Core, Persistence &amp; Vector Mesh, and Cloud Infrastructure.</desc>
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap');
+      text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+      @keyframes techPulse {
+        0%, 100% { filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4)); }
+        50% { filter: drop-shadow(0 0 14px rgba(56, 189, 248, 0.8)); }
+      }
+      @keyframes goldPulse {
+        0%, 100% { filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.4)); }
+        50% { filter: drop-shadow(0 0 14px rgba(251, 191, 36, 0.8)); }
+      }
+
+      .pulse-tech { animation: techPulse 3.5s ease-in-out infinite; }
+      .pulse-gold { animation: goldPulse 4s ease-in-out infinite; }
+
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    ]]></style>
+
+    <linearGradient id="stackBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070a13"/>
+      <stop offset="100%" stop-color="#04060a"/>
+    </linearGradient>
+
+    <linearGradient id="stackBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#2563eb" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="40%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+
+    <radialGradient id="stackGlowLeft" cx="15%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="stackGlowRight" cx="85%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="stackClip"><rect width="1200" height="480" rx="20"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#stackClip)">
+    <!-- Base Background -->
+    <rect width="1200" height="480" fill="url(#stackBg)"/>
+    <rect width="1200" height="480" fill="url(#stackGlowLeft)"/>
+    <rect width="1200" height="480" fill="url(#stackGlowRight)"/>
+
+    <!-- Subtle Hex/Grid Lines -->
+    <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+      <line x1="0" y1="120" x2="1200" y2="120"/>
+      <line x1="0" y1="290" x2="1200" y2="290"/>
+      <line x1="600" y1="120" x2="600" y2="480"/>
+    </g>
+
+    <!-- Outer Border -->
+    <rect x="1" y="1" width="1198" height="478" rx="19" fill="none" stroke="url(#stackBorder)" stroke-width="1.6"/>
+
+    <!-- Header Block -->
+    <g transform="translate(60, 48)">
+      <rect x="0" y="0" width="200" height="24" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="12" cy="12" r="3" fill="#38bdf8"/>
+      <text class="mono" x="24" y="16" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="1.2">SYSTEM INVENTORY</text>
+
+      <text x="0" y="56" font-size="32" font-weight="900" fill="url(#titleGrad)" letter-spacing="-0.5">
+        Production Engineering Arsenal
+      </text>
+      <text class="mono" x="0" y="82" font-size="13" font-weight="500" fill="#94a3b8">
+        Battle-hardened primitives, modern frameworks, and cloud-native infrastructure.
+      </text>
+    </g>
+
+    <!-- ==================== 4 TECH SECTIONS ==================== -->
+
+    <!-- Section 1: Frontend & Micro-UI -->
+    <g transform="translate(60, 150)">
+      <rect width="525" height="135" rx="12" fill="#0a0f1d" fill-opacity="0.85" stroke="#1e293b" stroke-width="1.2"/>
+      <rect x="0" y="0" width="4" height="135" rx="2" fill="#38bdf8"/>
+      
+      <!-- Section Title -->
+      <text class="mono" x="20" y="26" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1.2">
+        01 // FRONTEND &amp; REACTIVE UI
+      </text>
+
+      <!-- Chips Row 1 -->
+      <g transform="translate(20, 42)">
+        <!-- Next.js 16 -->
+        <g transform="translate(0, 0)">
+          <rect width="94" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#ffffff">Next.js 16</text>
+        </g>
+        <!-- React 19 -->
+        <g transform="translate(102, 0)">
+          <rect width="84" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#38bdf8">React 19</text>
+        </g>
+        <!-- Vue 3 -->
+        <g transform="translate(194, 0)">
+          <rect width="72" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#42b883">Vue 3</text>
+        </g>
+        <!-- TypeScript -->
+        <g transform="translate(274, 0)">
+          <rect width="102" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#60a5fa">TypeScript</text>
+        </g>
+        <!-- Tailwind v4 -->
+        <g transform="translate(384, 0)">
+          <rect width="100" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#38bdf8">Tailwind v4</text>
+        </g>
+      </g>
+
+      <!-- Chips Row 2 -->
+      <g transform="translate(20, 84)">
+        <!-- HTMX -->
+        <g transform="translate(0, 0)">
+          <rect width="70" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#38bdf8">HTMX</text>
+        </g>
+        <!-- Alpine.js -->
+        <g transform="translate(78, 0)">
+          <rect width="88" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#818cf8">Alpine.js</text>
+        </g>
+        <!-- Radix UI -->
+        <g transform="translate(174, 0)">
+          <rect width="84" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#cbd5e1">Radix UI</text>
+        </g>
+        <!-- Turbopack -->
+        <g transform="translate(266, 0)">
+          <rect width="96" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#fbbf24">Turbopack</text>
+        </g>
+        <!-- Vite -->
+        <g transform="translate(370, 0)">
+          <rect width="60" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#bd34fe">Vite</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Section 2: Backend & Distributed Core -->
+    <g transform="translate(615, 150)">
+      <rect width="525" height="135" rx="12" fill="#0a0f1d" fill-opacity="0.85" stroke="#1e293b" stroke-width="1.2"/>
+      <rect x="0" y="0" width="4" height="135" rx="2" fill="#2563eb"/>
+      
+      <!-- Section Title -->
+      <text class="mono" x="20" y="26" font-size="11" font-weight="700" fill="#60a5fa" letter-spacing="1.2">
+        02 // BACKEND &amp; DISTRIBUTED ENGINES
+      </text>
+
+      <!-- Chips Row 1 -->
+      <g transform="translate(20, 42)">
+        <!-- Go (Golang) -->
+        <g transform="translate(0, 0)">
+          <rect width="102" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#00add8">Go 1.24+</text>
+        </g>
+        <!-- Node.js -->
+        <g transform="translate(110, 0)">
+          <rect width="84" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#22c55e">Node.js</text>
+        </g>
+        <!-- Python -->
+        <g transform="translate(202, 0)">
+          <rect width="78" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#fbbf24">Python</text>
+        </g>
+        <!-- NestJS -->
+        <g transform="translate(288, 0)">
+          <rect width="78" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#e0234e">NestJS</text>
+        </g>
+        <!-- Java -->
+        <g transform="translate(374, 0)">
+          <rect width="66" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#f87171">Java</text>
+        </g>
+      </g>
+
+      <!-- Chips Row 2 -->
+      <g transform="translate(20, 84)">
+        <!-- gRPC / Proto -->
+        <g transform="translate(0, 0)">
+          <rect width="90" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#38bdf8">gRPC / PB</text>
+        </g>
+        <!-- REST Microservices -->
+        <g transform="translate(98, 0)">
+          <rect width="134" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#cbd5e1">Microservices</text>
+        </g>
+        <!-- Zitadel OIDC -->
+        <g transform="translate(240, 0)">
+          <rect width="108" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#a78bfa">Zitadel OIDC</text>
+        </g>
+        <!-- Event Queues -->
+        <g transform="translate(356, 0)">
+          <rect width="112" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#60a5fa">Kafka / NATS</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Section 3: Persistence & Data Mesh -->
+    <g transform="translate(60, 305)">
+      <rect width="525" height="135" rx="12" fill="#0a0f1d" fill-opacity="0.85" stroke="#1e293b" stroke-width="1.2"/>
+      <rect x="0" y="0" width="4" height="135" rx="2" fill="#818cf8"/>
+      
+      <!-- Section Title -->
+      <text class="mono" x="20" y="26" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="1.2">
+        03 // PERSISTENCE &amp; VECTOR INTELLIGENCE
+      </text>
+
+      <!-- Chips Row 1 -->
+      <g transform="translate(20, 42)">
+        <!-- PostgreSQL -->
+        <g transform="translate(0, 0)">
+          <rect width="108" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#336791">PostgreSQL</text>
+        </g>
+        <!-- Supabase -->
+        <g transform="translate(116, 0)">
+          <rect width="90" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#3ecf8e">Supabase</text>
+        </g>
+        <!-- Redis -->
+        <g transform="translate(214, 0)">
+          <rect width="68" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#dc2626">Redis</text>
+        </g>
+        <!-- pgvector -->
+        <g transform="translate(290, 0)">
+          <rect width="86" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#38bdf8">pgvector</text>
+        </g>
+        <!-- TimescaleDB -->
+        <g transform="translate(384, 0)">
+          <rect width="104" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#f59e0b">Timescale</text>
+        </g>
+      </g>
+
+      <!-- Chips Row 2 -->
+      <g transform="translate(20, 84)">
+        <!-- RAG Pipelines -->
+        <g transform="translate(0, 0)">
+          <rect width="124" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#a78bfa">RAG Pipelines</text>
+        </g>
+        <!-- Embeddings -->
+        <g transform="translate(132, 0)">
+          <rect width="108" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#cbd5e1">Embeddings</text>
+        </g>
+        <!-- ACID Transactions -->
+        <g transform="translate(248, 0)">
+          <rect width="120" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#38bdf8">ACID Security</text>
+        </g>
+        <!-- Prisma / Drizzle -->
+        <g transform="translate(376, 0)">
+          <rect width="112" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#fbbf24">ORM / SQLX</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Section 4: Cloud, DevOps & Operations -->
+    <g transform="translate(615, 305)">
+      <rect width="525" height="135" rx="12" fill="#0a0f1d" fill-opacity="0.85" stroke="#1e293b" stroke-width="1.2"/>
+      <rect x="0" y="0" width="4" height="135" rx="2" fill="#fbbf24"/>
+      
+      <!-- Section Title -->
+      <text class="mono" x="20" y="26" font-size="11" font-weight="700" fill="#fbbf24" letter-spacing="1.2">
+        04 // CLOUD, CONTAINERS &amp; OPS
+      </text>
+
+      <!-- Chips Row 1 -->
+      <g transform="translate(20, 42)">
+        <!-- Docker -->
+        <g transform="translate(0, 0)">
+          <rect width="78" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#2496ed">Docker</text>
+        </g>
+        <!-- Kubernetes -->
+        <g transform="translate(86, 0)">
+          <rect width="108" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#326ce5">Kubernetes</text>
+        </g>
+        <!-- Cloudflare -->
+        <g transform="translate(202, 0)">
+          <rect width="100" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#f38020">Cloudflare</text>
+        </g>
+        <!-- AWS -->
+        <g transform="translate(310, 0)">
+          <rect width="60" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#ff9900">AWS</text>
+        </g>
+        <!-- Vercel / Render -->
+        <g transform="translate(378, 0)">
+          <rect width="112" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="700" fill="#ffffff">Vercel/Render</text>
+        </g>
+      </g>
+
+      <!-- Chips Row 2 -->
+      <g transform="translate(20, 84)">
+        <!-- Linux Alpine -->
+        <g transform="translate(0, 0)">
+          <rect width="112" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#0d597f">Alpine Linux</text>
+        </g>
+        <!-- GitHub Actions -->
+        <g transform="translate(120, 0)">
+          <rect width="134" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#60a5fa">CI/CD Actions</text>
+        </g>
+        <!-- Nginx -->
+        <g transform="translate(262, 0)">
+          <rect width="68" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#009639">Nginx</text>
+        </g>
+        <!-- Zero Downtime -->
+        <g transform="translate(338, 0)">
+          <rect width="136" height="32" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+          <text class="mono" x="10" y="20" font-size="11" font-weight="600" fill="#22c55e">Zero Downtime</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
